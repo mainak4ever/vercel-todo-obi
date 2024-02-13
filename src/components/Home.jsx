@@ -120,15 +120,19 @@ const Home = () => {
         </div>
       </div>
       <div>
-        {sortedTodos.map((todo) => (
-          <TodoItem
-            key={todo._id}
-            todo={todo}
-            onEdit={handleEdit}
-            onDelete={handleDelete}
-            toggleCompleted={toggleCompleted}
-          />
-        ))}
+        {sortedTodos.length === 0 ? (
+          <h2 className="text-white text-bold">No Todos Yet</h2>
+        ) : (
+          sortedTodos.map((todo) => (
+            <TodoItem
+              key={todo._id}
+              todo={todo}
+              onEdit={handleEdit}
+              onDelete={handleDelete}
+              toggleCompleted={toggleCompleted}
+            />
+          ))
+        )}
       </div>
     </div>
   );
