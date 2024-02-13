@@ -30,8 +30,8 @@ function App() {
 
   if (loading) {
     return (
-      <div className="text-white">
-        <h2>Loading...</h2>
+      <div className="text-white flex justify-center items-center h-[80vh] w-full">
+        <div className="loader"></div>
       </div>
     );
   }
