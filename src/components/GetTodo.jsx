@@ -60,7 +60,11 @@ const GetTodo = () => {
   };
 
   if (loading) {
-    return <div className="max-w-xl mx-auto text-white mt-8">Loading...</div>;
+    return (
+      <div className="text-white flex justify-center items-center h-[80vh] w-full">
+        <div className="loader"></div>
+      </div>
+    );
   }
 
   if (!todo) {

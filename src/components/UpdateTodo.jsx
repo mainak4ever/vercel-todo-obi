@@ -45,7 +45,11 @@ function UpdateTodo() {
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="text-white flex justify-center items-center h-[80vh] w-full">
+        <div className="loader"></div>
+      </div>
+    );
   }
 
   return (
