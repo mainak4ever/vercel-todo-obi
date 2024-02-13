@@ -15,7 +15,7 @@ const TodoItem = ({ todo, onEdit, onDelete, toggleCompleted }) => {
           <span
             className={`${
               todo.completed ? "line-through text-gray-400" : "text-white"
-            }`}
+            } hover:underline`}
           >
             {todo.title}
           </span>
