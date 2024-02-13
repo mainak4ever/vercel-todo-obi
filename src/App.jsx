@@ -29,7 +29,11 @@ function App() {
   }, [dispatch, token]);
 
   if (loading) {
-    return <div>Loading...</div>; // You can render a loader while fetching data
+    return (
+      <div className="text-white">
+        <h2>Loading...</h2>
+      </div>
+    );
   }
 
   return (
